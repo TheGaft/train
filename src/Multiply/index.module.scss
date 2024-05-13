@@ -1,0 +1,26 @@
+.text {
+  &,
+  * {
+    font-size: 25px;
+  }
+  margin: 10px 0;
+}
+
+.btn {
+  width: 30px;
+  height: 25px;
+  text-align: center;
+  border: 1px solid black;
+  cursor: pointer;
+  & + & {
+    margin-left: -1px;
+  }
+
+  &:hover {
+    background-color: rgba(cyan, 0.2);
+  }
+}
+
+.activeBtn {
+  background-color: rgba(yellow, 0.5);
+}
